@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>PyAPI</Title>
+    </head>
+    <body>
+        {% if value in ethnicitycount %}
+            {% for value in ethnicitycount %}
+                {% if value > 0 %}
+                    <div class='container'>
+                        <h1>{{ethnicityconcept[loop.index0].concept_name}} 인종 환자 수</h1>
+                        <p>{{value}}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <h1>결과값 없음</h1>
+        {% endif %}
+    </body>
+</html>

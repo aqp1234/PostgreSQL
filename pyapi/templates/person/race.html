@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>PyAPI</Title>
+    </head>
+    <body>
+        {% for value in racecount %}
+            {% if value > 0 %}
+                <div class='container'>
+                    <h1>{{personrace[loop.index0]}} 인종 환자 수</h1>
+                    <p>{{value}}</p>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>

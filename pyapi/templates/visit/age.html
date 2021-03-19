@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>PyAPI</Title>
+    </head>
+    <body>
+        {% for i in yearlist %}
+            <div class='container'>
+                <h1>{{loop.index0 * 10}} 대 방문수</h1>
+                <h3>{{i}}</h3>
+            </div>
+        {% endfor %}
+    </body>
+</html>
